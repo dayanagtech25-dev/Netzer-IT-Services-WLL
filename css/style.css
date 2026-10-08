@@ -47,4 +47,18 @@ h1,h2,h3{font-family:Sora,sans-serif;line-height:1.2}a{color:var(--blue)}img{max
 .ci{grid-template-columns:repeat(3,1fr);margin-top:-90px;position:relative}.ci .card{text-align:center;box-shadow:0 12px 30px #0a1f4440}.ci .card p{font-size:18px;color:#fff}
 .split.top{align-items:start}.form{background:#fff;padding:30px;border-radius:16px;box-shadow:0 10px 30px #0a1f4422}.form h2{margin-bottom:6px}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}.hp{position:absolute;left:-9999px}.note{min-height:24px;font-weight:500}.note.ok{color:#1e8a39}.note.err{color:#c0392b}
 .split iframe{width:100%;height:280px;border:0;border-radius:12px;margin-top:10px}
-@media(max-width:860px){.sub{display:block;position:static;box-shadow:none;min-width:0;padding:0 0 0 14px}.ci{grid-template-columns:1fr;margin-top:-50px}.two{grid-template-columns:1fr}.arw{width:38px;height:38px;top:auto;bottom:10px;transform:none}.fab span{display:none}.fab{padding:13px}.slide{padding-bottom:50px}.slides,.hero{min-height:600px}}
+@media(max-width:860px){.sub{display:block;position:static;box-shadow:none;min-width:0;padding:0 0 0 14px}.ci{grid-template-columns:1fr;margin-top:-50px}.two{grid-template-columns:1fr}.arw{width:38px;height:38px;top:auto;bottom:10px;transform:none}.fab span{display:none}.fab{padding:13px}.slide{padding-bottom:50px}.slides,.hero{min-height:600px}}.sub a.all-s{display:none}
+@media(max-width:860px){
+.nav{align-items:stretch;gap:0;padding:6px 20px 22px;max-height:calc(100vh - 110px);overflow-y:auto;text-align:left}
+.nav>a:not(.btn),.dd>a{display:block;padding:14px 4px;border-bottom:1px solid #e3eaf6;text-align:left;font-size:17px}
+.nav>a[aria-current],.dd>a[aria-current]{color:var(--blue);border-bottom:1px solid #e3eaf6}
+.dd{width:100%}
+.dd>a:after{content:"\25BE";float:right;transition:transform .2s}
+.dd.open>a:after{transform:rotate(180deg)}
+.nav .sub,.dd:hover .sub,.dd:focus-within .sub{display:none}
+.dd.open .sub{display:block}
+.sub{position:static;box-shadow:none;min-width:0;padding:2px 0 4px 14px;margin:6px 0 8px 4px;border-left:3px solid var(--org)}
+.sub a{display:block;padding:10px 8px;font-size:15px;border:0;color:#33425f;text-align:left}
+.sub a.all-s{display:block;font-weight:700;color:var(--blue)}
+.nav .btn{margin-top:18px;align-self:flex-start;text-align:left;padding:13px 26px}
+}
