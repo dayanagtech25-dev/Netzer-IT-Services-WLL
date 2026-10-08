@@ -21,3 +21,19 @@ fetch('https://formsubmit.co/ajax/info@netzerit.com',{method:'POST',headers:{'Co
 .then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(){m.className='note ok';m.textContent='Thank you. We got your message and will reply soon.';f.reset()})
 .catch(function(){m.className='note err';m.textContent='Message could not be sent. Please WhatsApp us on +973 3744 8533.'})})}
 })();
+(function(){
+var dd=document.querySelector('.dd');if(!dd)return;
+var link=dd.querySelector(':scope > a'),sub=dd.querySelector('.sub');
+var all=document.createElement('a');
+all.href=link.href;all.textContent='All Services';all.className='all-s';
+sub.insertBefore(all,sub.firstChild);
+link.setAttribute('aria-haspopup','true');
+link.setAttribute('aria-expanded','false');
+link.addEventListener('click',function(e){
+  if(window.matchMedia('(max-width:860px)').matches){
+    e.preventDefault();
+    var o=dd.classList.toggle('open');
+    link.setAttribute('aria-expanded',o);
+  }
+});
+})();
