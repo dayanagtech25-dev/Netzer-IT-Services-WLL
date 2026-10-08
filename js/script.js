@@ -17,7 +17,7 @@ v.forEach(function(el){if(!el.value.trim()||(el.type==='email'&&!/^\S+@\S+\.\S+$
 if(!ok){m.className='note err';m.textContent='Please fill in your name, a valid email and your message.';return}
 var data=Object.fromEntries(new FormData(f));data._subject='New enquiry from netzerit.com';data._template='table';
 m.className='note';m.textContent='Sending...';
-fetch('https://formsubmit.co/ajax/info@netzerit.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+fetch('https://formsubmit.co/ajax/gracewelldesign@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
 .then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(){m.className='note ok';m.textContent='Thank you. We got your message and will reply soon.';f.reset()})
 .catch(function(){m.className='note err';m.textContent='Message could not be sent. Please WhatsApp us on +973 3744 8533.'})})}
 })();
