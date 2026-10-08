@@ -1,0 +1,7 @@
+# Image sizes (width x height, px)
+logo.png 360x120 (transparent PNG, also used as favicon)
+slide-1.jpg, slide-2.jpg, slide-3.jpg 1920x800 (home slider backgrounds, keep under 250 KB each)
+banner.jpg 1920x500 (inner page headers)
+about.jpg 900x600 (About and home about section)
+og.jpg 1200x630 (social sharing image)
+assets/icons/*.svg 64x64 (service icons)
