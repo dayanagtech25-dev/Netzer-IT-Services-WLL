@@ -1,0 +1,1 @@
+Optional self-hosted fonts. The site loads Sora and DM Sans from Google Fonts.
