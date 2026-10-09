@@ -62,3 +62,9 @@ h1,h2,h3{font-family:Sora,sans-serif;line-height:1.2}a{color:var(--blue)}img{max
 .sub a.all-s{display:block;font-weight:700;color:var(--blue)}
 .nav .btn{margin-top:18px;align-self:flex-start;text-align:left;padding:13px 26px}
 }
+.copy a sup {
+    font-size: 9px;
+    vertical-align: super;
+    line-height: 0;
+}
+#site-header{position:sticky;top:0;z-index:50;min-height:100px;background:#fff}
