@@ -3,7 +3,7 @@ var tag=document.querySelector('script[src$="js/script.js"]');
 var root=tag.getAttribute('src').replace('js/script.js','');
 
 /* ---- shared header and footer: edit them here, they appear on every page ---- */
-var HEADER=`<header class="hdr"><div class="top"><div class="wrap"><span>Kingdom of Bahrain</span><a href="mailto:info@netzerit.bh">info@netzerit.bh</a><a href="tel:+97338870603">+973 3300 1234</a></div></div>
+var HEADER=`<header class="hdr"><div class="top"><div class="wrap"><span>Kingdom of Bahrain</span><a href="mailto:info@netzerit.bh">info@netzerit.bh</a><a href="tel:+97338870603">+973 38870603</a></div></div>
 <div class="wrap bar"><a href="{{root}}index.html" class="logo"><img src="{{root}}images/logo.jpg" alt="Netzer IT Services logo" width="180" height="60"></a>
 <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 <nav class="nav" aria-label="Main"><a href="{{root}}index.html">Home</a><a href="{{root}}about.html">About Us</a><div class="dd"><a href="{{root}}services.html">Services</a><div class="sub"><a href="{{root}}structured-cabling.html">Structured Cabling</a><a href="{{root}}fiber-optic-installation.html">Fiber Optic Installation</a><a href="{{root}}it-rack-setup.html">IT Rack Setup</a><a href="{{root}}network-testing-certification.html">Network Testing & Certification</a><a href="{{root}}cctv-security-services.html">CCTV Security Services</a><a href="{{root}}annual-maintenance.html">Annual Maintenance</a></div></div><a href="{{root}}contact.html">Contact</a><a class="btn" href="{{root}}contact.html">Get Free Quote</a></nav></div></header>`;
