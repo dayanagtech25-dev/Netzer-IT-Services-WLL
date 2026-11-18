@@ -5,7 +5,7 @@
 வாசிக்கிறேன்
 
 <details>
-<summary id="transcript-toggle-label">Show more</summary>
+<summary>Show more / Show less</summary>
 
 ஆதியாகமம் 2:1-3 வசனங்கள்
 
@@ -128,16 +128,3 @@
 ஜெபம் செய்வோம்.
 
 </details>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const transcript = document.querySelector("details");
-  const label = document.getElementById("transcript-toggle-label");
-
-  if (!transcript || !label) return;
-
-  transcript.addEventListener("toggle", function () {
-    label.textContent = transcript.open ? "Show less" : "Show more";
-  });
-});
-</script>
