@@ -5,7 +5,7 @@
 வாசிக்கிறேன்
 
 <details>
-<summary>Show more / Show less</summary>
+<summary>Show more</summary>
 
 ஆதியாகமம் 2:1-3 வசனங்கள்
 
